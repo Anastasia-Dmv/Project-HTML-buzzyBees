@@ -1,15 +1,35 @@
-.btn-orange {
-  font-size: 11px;
-  font-family: "Tahoma";
+.reg {
+  padding-top: 58px;
+  padding-bottom: 62px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)), url(../images/background.jpg);
+
+  @media (min-width:768px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)),
+      url(../images/background@2x.jpg);
+  }
+}
+
+.section-title {
+  font-size: 14px;
+  font-family: "Montserrat";
   color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.86;
+
+  &__orange {
+    color: $second-text-color;
+  }
+}
+
+
+.btn-orange {
+
   display: inline-block;
   width: 250px;
   height: 50px;
   border: 2px solid rgb(255, 107, 8);
   background-color: rgb(255, 107, 8);
 
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 30;
-  text-align: center;
 }
