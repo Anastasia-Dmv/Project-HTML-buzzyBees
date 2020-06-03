@@ -1,0 +1,18 @@
+.text-small {
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+
+
+
+  @media (min-width: 1280px) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
