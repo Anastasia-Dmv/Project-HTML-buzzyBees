@@ -1,6 +1,7 @@
 .reg {
   display: flex;
   justify-content: center;
+
   align-items: center;
   text-align: center;
   padding-top: 58px;
@@ -73,6 +74,11 @@
   border: 1px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 
+  @media (min-width: 768px) {
+    width: 400px;
+    height: 50px;
+  }
+
 }
 
 .reg-form__mail {
@@ -89,6 +95,11 @@
   height: 50px;
   border: 2px solid rgb(255, 107, 8);
   background-color: rgb(255, 107, 8);
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+
+  }
 }
 
 .btn-orange__text {
@@ -98,6 +109,11 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+}
+
+.btn-orange:hover,
+.btn-orange:focus .btn-orange__text {
+  color: rgb(255, 107, 8);
 }
 
 ::placeholder {
@@ -116,5 +132,5 @@
 
 .reg-form__mail:required:focus:invalid,
 .reg-form__tel:required:focus:invalid {
-  outline: 1px solid rgb(128, 128, 128);
+  outline: 1px solid rgb(131, 9, 9);
 }
