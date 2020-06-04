@@ -6,13 +6,14 @@
 .program-title {
   color: $three-text-color;
   text-align: center;
-  margin: 0;
+  margin-bottom: 36px;
 }
 
 .program-list {
+  position: relative;
   border-left: 2px solid #546264;
-  padding-left: 30px;
-  margin: 32px 0 0 62px;
+  padding: 0 0 132px 30px;
+  margin-left: 40px;
   width: 100%;
 }
 
@@ -24,6 +25,7 @@
   color: $three-text-color;
   font-weight: 700;
   width: 214px;
+  margin-bottom: 20px;
 
 }
 
@@ -42,10 +44,18 @@
 }
 
 .category-list {
-  padding: 0;
+  margin-bottom: 26px;
 }
 
 .category-list__item {
+  margin-top: 14px;
+}
+
+.category-list__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.category-list__item--description {
   position: relative;
   padding-left: 38px;
   font-size: 13px;
@@ -53,9 +63,11 @@
   line-height: 29px;
   color: $second-text-color;
   font-weight: 500;
+  margin-bottom: 14px;
 }
 
-.category-list__item::before {
+
+.category-list__item--description::before {
   position: absolute;
   display: block;
   content: "";
@@ -66,22 +78,49 @@
   left: 0;
 }
 
-.topic-list{
-  padding: 0;
+.category-list__item--span {
+  opacity: 0;
+}
+
+.topic-list {
+  margin-top: 20px;
+  
 }
 
 .topic-list__item {
   color: $paragraph-text-color;
+  @extend %text-small;
+}
+
+.topic-list__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .advantages-list {
-  color: $three-text-color;
+  color: $main-text-color;
   padding-left: 28px;
   background-color: $second-backcolor;
+  font-weight: 700;
+  list-style-type: none;
+  counter-reset: list; 
 }
 
-.advantages-list__item::before {
+.program-list::after {
+  position: absolute;
   display: block;
   content: "";
+  width: 142px;
+  height: 170px;
+  background-image: url(../../images/program-images/class.jpg);
+  bottom: 0;
+  right: 20px;
 }
+
+.advantages-list__item::after {
+  display: block;
+  content: counter(0);
+  counter-increment: 0;
+}
+
+ 
 
