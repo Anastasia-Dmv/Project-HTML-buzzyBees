@@ -1,0 +1,26 @@
+.problems {
+  &__list {
+    counter-reset: li;
+    background-color: $second-backcolor;
+  }
+
+  &__item::after {
+    counter-increment: li;
+    content: '0' counter(li);
+    color: red;
+    padding-right: 15px;
+  }
+  &-wrapper {
+    padding-top: 25px;
+    background-color: $main-backcolor;
+    height: 520px;
+  }
+
+  &__title {
+    color: $three-text-color;
+
+    &_help {
+      color: $second-text-color;
+    }
+  }
+}
