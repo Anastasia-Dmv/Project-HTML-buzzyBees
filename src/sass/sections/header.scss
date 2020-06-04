@@ -13,7 +13,7 @@
 }
 
 .header__logo-reverse {
-  margin: 14px 0 0 16px;
+  margin: 15px 0 0 16px;
 }
 
 .logotype-reverse {
@@ -51,6 +51,7 @@
   display: flex;
   width: 100%;
   background-color: #fff;
+  justify-content: space-between;
   align-items: center;
   padding-right: 16px;
   position: relative;
@@ -70,6 +71,7 @@
   @include wide-screen {
     paddng-left: 32px;
   }
+
   &__logo {
     display: inline-block;
     height: auto;
@@ -97,13 +99,34 @@
       display: none;
     }
   }
+  &__nav-wrapper {
+    display: flex;
+    align-items: center;
+  }
 
   &__lesson-link {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 45px;
+    width: 250px;
+    height: 50px;
+    color: $second-text-color;
+    border: 3px solid $second-text-color;
+    text-align: center;
+    text-transform: uppercase;
+
     @include sp {
       display: none;
     }
     @include tab {
       display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $main-text-color;
+      border: 3px solid $main-text-color;
     }
   }
 
@@ -114,14 +137,13 @@
       top: 0;
       display: none;
       z-index: 10;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(0, 0, 0, 0.7);
       width: 100%;
       height: 100%;
     }
     @include pc {
       display: inline-block;
       width: auto;
-      margin-left: auto;
     }
     &.open {
       display: block;
@@ -132,6 +154,7 @@
   }
 
   &__nav-lesson-link {
+    margin: 0 auto;
     font-size: 11px;
     font-weight: 700;
     line-height: 45px;
@@ -139,7 +162,6 @@
     height: 50px;
     color: $second-text-color;
     border: 3px solid $second-text-color;
-    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
 
@@ -156,20 +178,41 @@
     @include wide-screen {
       display: none;
     }
+
+    &:hover,
+    &:focus {
+      color: $three-text-color;
+      border: 3px solid $three-text-color;
+    }
   }
 
   &__nav-list {
-    margin: 0;
     padding: 0;
+    margin: 0;
     @include hamburger {
       position: relative;
       overflow-x: hidden;
       overflow-y: auto;
-      padding-top: 115px;
+      padding-top: 80px;
     }
+    @include sp {
+      margin: 0 auto 25px;
+      width: 280px;
+    }
+
+    @include tab {
+      margin: 0 auto 30px;
+      width: 280px;
+    }
+
     @include pc {
       display: flex;
       align-items: center;
+      margin-right: 45px;
+    }
+
+    @include wide-screen {
+      margin-right: 60px;
     }
   }
 
@@ -177,25 +220,37 @@
     @include sp {
       display: block;
       margin: 0 auto;
-      margin-bottom: 32px;
       text-align: left;
-      padding-left: 15%;
     }
     @include tab {
       display: block;
       margin: 0 auto;
-      margin-bottom: 40px;
       text-align: left;
-      padding-left: 30%;
     }
-    @include pc {
-      display: inline-block;
-      margin-right: 24px;
-    }
+
     @include wide-screen {
-      margin-right: 40px;
+      margin-right: 60px;
     }
   }
+
+  &__nav-item:not(:last-child) {
+    @include sp {
+      margin-bottom: 25px;
+    }
+
+    @include tab {
+      margin-bottom: 30px;
+    }
+
+    @include pc {
+      margin-right: 45px;
+    }
+
+    @include wide-screen {
+      margin-right: 60px;
+    }
+  }
+
   &__nav-link {
     text-decoration: none;
     color: #000;
@@ -204,17 +259,20 @@
       color: #fff;
       font-weight: 800;
     }
+
     @include pc {
       font-size: 12px;
       font-weight: 700;
       color: $four-text-color;
       align-items: center;
+      text-transform: uppercase;
     }
     @include wide-screen {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 700;
       color: $four-text-color;
       align-items: center;
+      text-transform: uppercase;
     }
     &:hover {
       color: $second-text-color;
