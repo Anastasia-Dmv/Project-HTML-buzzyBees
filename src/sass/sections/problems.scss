@@ -1,23 +1,62 @@
 .problems {
   &__list {
+    box-shadow: 4px 7px 16px 6px rgba(29, 29, 27, 0.04);
+    padding-top: 50px;
+    padding-bottom: 34px;
     counter-reset: li;
     background-color: $second-backcolor;
   }
 
-  &__item::after {
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &__item::before {
     counter-increment: li;
     content: '0' counter(li);
-    color: red;
-    padding-right: 15px;
+    color: $accent-backcolor;
+    font-size: 14px;
+    position: absolute;
+    top: -25px;
+    left: 35px;
   }
+  &__item::after {
+    display: block;
+    content: '';
+    background-color: $accent-backcolor;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: -18px;
+  }
+
   &-wrapper {
-    padding-top: 25px;
+    padding-top: 50px;
     background-color: $main-backcolor;
     height: 520px;
+
+    @media (min-width: 768px) {
+      padding-top: 66px;
+      background-image: url(../images/fire.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
   }
 
   &__title {
     color: $three-text-color;
+    margin-bottom: 18px;
+
+    @media (min-width: 768px) {
+      width: 470px;
+      line-height: 33px;
+      margin-bottom: 26px;
+    }
 
     &_help {
       color: $second-text-color;
