@@ -3,16 +3,35 @@
     box-shadow: 4px 7px 16px 6px rgba(29, 29, 27, 0.04);
     padding-top: 50px;
     padding-bottom: 34px;
+    padding-left: 60px;
+    padding-right: 60px;
     counter-reset: li;
     background-color: $second-backcolor;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-bottom: 50px;
+    }
   }
 
   &__item {
     position: relative;
+
+    @media (min-width: 768px) {
+      width: 232px;
+    }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 50px;
+  }
+
+  &__item:nth-last-of-type(-n + 2) {
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__item::before {
@@ -31,7 +50,7 @@
     width: 25px;
     height: 2px;
     position: absolute;
-    top: -18px;
+    top: -16px;
   }
 
   &-wrapper {
@@ -45,6 +64,11 @@
       background-repeat: no-repeat;
       background-position: right;
       background-size: contain;
+      height: 340px;
+
+      @media (min-resolution: 192dpi) {
+        background-image: url(../images/fire@2x.png);
+      }
     }
   }
 
@@ -62,4 +86,8 @@
       color: $second-text-color;
     }
   }
+}
+
+.trans-word {
+  display: block;
 }
