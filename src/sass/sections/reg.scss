@@ -33,7 +33,30 @@
   line-height: 1.86;
   text-align: center;
 
+  @media (min-width: 768px) {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.729;
+    padding: 0 80px;
+    margin-bottom: 36px;
+  }
+
+  @media(min-width:1280px) {
+    font-size: 37.5px;
+    font-weight: bold;
+    line-height: 1.334;
+  }
+
+  @media(min-width:1680px) {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.334;
+  }
+
 }
+
+
+
 
 .reg-title__sub {
   @media (max-width:767px) {
@@ -56,13 +79,43 @@
   text-align: center;
   padding: 0 20px;
   margin-bottom: 24px;
+  text-align: center;
 
-  @media (max-width:767px) {
-    // width: 258px;
+  @media (min-width:768px) {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.333;
+    padding: 0 130px;
     text-align: center;
+    margin-bottom: 40px;
+
+  }
+
+  @media(min-width:1280px) {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.361;
+  }
+
+  @media(min-width:1680px) {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+}
+
+.reg-description__connect {
+  @media (min-width:768px) {
+    display: block;
   }
 }
 
+
+
+.reg-form {
+  margin-bottom: 28px;
+}
 
 .reg-form__mail,
 .reg-form__tel {
@@ -79,7 +132,20 @@
     height: 50px;
   }
 
+  @media(min-width:1280px) {
+    width: 618px;
+    height: 70px;
+  }
+
+  @media(min-width:1680px) {
+    width: 618px;
+    height: 70px;
+  }
+
 }
+
+
+
 
 .reg-form__mail {
   margin-bottom: 20px;
@@ -100,6 +166,12 @@
     background-color: rgb(255, 255, 255);
 
   }
+
+  @media(min-width:1280px) {
+    width: 350px;
+    height: 68px;
+  }
+
 }
 
 .btn-orange__text {
@@ -109,6 +181,14 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+
+  @media(min-width:1280px) {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+  }
+
 }
 
 .btn-orange:hover,
@@ -123,6 +203,19 @@
   font-weight: bold;
   line-height: 2.885;
 
+  @media(min-width:1280px) {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.8;
+
+  }
+
+  @media (min-width: width 1680px) {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.8;
+
+  }
 }
 
 .reg-form__mail:required:focus:valid,
