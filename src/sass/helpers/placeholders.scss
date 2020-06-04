@@ -5,3 +5,11 @@
   letter-spacing: 0.05em;
   font-weight: 400;
 }
+
+%line {
+  display: block;
+  content: “”;
+  width: 24px;
+  height: 2px;
+  background: rgb(255, 107, 7);
+}
