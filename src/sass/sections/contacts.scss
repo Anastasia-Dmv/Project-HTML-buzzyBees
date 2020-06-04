@@ -1,15 +1,37 @@
 .contacts {
   padding-top: 34px;
-  padding: bottom 15px;
+  padding-bottom: 15px;
+
+  @media (min-width:768px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+}
+
+.contacts-list {
+  @media (min-width:768px) {
+    display: flex;
+    flex-direction: row;
+
+  }
 }
 
 /*-----telephone----*/
 
 
-.contacts-tel {
+.contacts__tel {
   text-align: center;
   margin-bottom: 27px;
+
+  @media (min-width:768px) {
+    width: 290px;
+    border-right: 1px solid rgb(224, 224, 224);
+    order: 2;
+
+  }
 }
+
 
 .contacts__tel-link {
   font-size: 18px;
@@ -29,9 +51,16 @@
 
 /*-----telephone----*/
 
-.contact-instagram {
+.contacts__instagram {
   text-align: center;
   margin-bottom: 27px;
+
+  @media (min-width:768px) {
+    display: inline-block;
+    padding-right: 90px;
+    width: 195px;
+    order: 3;
+  }
 }
 
 .instagram-link--icon {
@@ -43,6 +72,11 @@
 
 .contacts__logo {
   text-align: center;
+
+  @media (min-width:768px) {
+    width: 200px;
+    order: 1;
+  }
 }
 
 .fire-logo {
@@ -55,6 +89,12 @@
   font-weight: 800;
   color: #000000;
   line-height: 1.2;
+
+  @media (min-width: width 768px) {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 3.2;
+  }
 
 }
 
@@ -69,6 +109,12 @@
   color: #000000;
   line-height: 1.2;
   text-transform: uppercase;
+
+  @media (min-width: width 768px) {
+    font-size: 8.75px;
+    line-height: 3.333;
+  }
+
 }
 
 .logotype-orange {
