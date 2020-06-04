@@ -1,9 +1,9 @@
 .text {
   font-size: 13px;
   line-height: 20px;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}  
 
 @media (min-width: 1280px) {
   font-size: 18px;
@@ -14,4 +14,4 @@
   font-size: 21px;
   line-height: 31px;
 }
- 
+
