@@ -34,8 +34,8 @@ abbr[title] {
 
 .reg-title {
   font-size: 14px;
-  font-family: 'Montserrat';
-  color: rgb(255, 255, 255);
+  font-family: $main-font-famaly;
+  color: $three-text-color;
   font-weight: 600;
   line-height: 1.86;
   text-align: center;
@@ -63,9 +63,6 @@ abbr[title] {
 
 }
 
-
-
-
 .reg-title__sub {
   @media (max-width:767px) {
     display: block;
@@ -80,8 +77,8 @@ abbr[title] {
 
 .reg-description {
   font-size: 11px;
-  font-family: "Montserrat";
-  color: rgb(255, 255, 255);
+  font-family: $main-font-famaly;
+  color: $three-text-color;
   font-weight: 400;
   line-height: 1.818;
   text-align: center;
@@ -119,19 +116,28 @@ abbr[title] {
   }
 }
 
+.reg-form {
+  margin-bottom: 28px;
 
-.reg-form_wrapper {
-  @media(min-width:1680px) {
+  &__name {
+    margin-bottom: 20px;
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__tel {
+    margin-bottom: 50px;
+  }
+
+  &_wrapper {
+    @media(min-width:1680px) {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
-.reg-form {
-  margin-bottom: 28px;
-}
+
 
 .reg-form__name,
 .reg-form__tel {
@@ -140,13 +146,13 @@ abbr[title] {
   width: 280px;
   height: 50px;
   font-size: 13px;
-  font-family: "Montserrat";
-  color: rgb(255, 255, 255);
+  font-family: $main-font-famaly;
+  color: $three-text-color;
   font-weight: bold;
   line-height: 2.885;
   background-color: transparent;
-  border: 1px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  border: 1px solid $three-text-color;
+  color: $three-text-color;
 
   @media (min-width: 768px) {
     width: 400px;
@@ -174,25 +180,21 @@ abbr[title] {
 }
 
 
-.reg-form__name {
-  margin-bottom: 20px;
-}
-
-.reg-form__tel {
-  margin-bottom: 50px;
-}
-
 .btn-orange {
   display: inline-block;
   width: 250px;
   height: 50px;
-  border: 2px solid rgb(255, 107, 8);
-  background-color: rgb(255, 107, 8);
+  border: 2px solid $second-text-color;
+  background-color: $second-text-color;
 
   &:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 107, 8);
+    background-color: $three-text-color;
+    color: $second-text-color;
 
+  }
+
+  &:hover .btn-orange__text {
+    color: $second-text-color;
   }
 
   @media(min-width:1280px) {
@@ -204,8 +206,8 @@ abbr[title] {
 
 .btn-orange__text {
   font-size: 11px;
-  font-family: "Montserrat";
-  color: rgb(255, 255, 255);
+  font-family: $main-font-famaly;
+  color: $three-text-color;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -219,14 +221,12 @@ abbr[title] {
 
 }
 
-.btn-orange:hover .btn-orange__text {
-  color: rgb(255, 107, 8);
-}
+
 
 ::placeholder {
   font-size: 13px;
-  font-family: "Montserrat";
-  color: rgb(255, 255, 255);
+  font-family: $main-font-famaly;
+  color: $three-text-color;
   font-weight: bold;
   line-height: 2.885;
 
@@ -247,10 +247,10 @@ abbr[title] {
 
 .reg-form__name:required:focus:valid,
 .reg-form__tel:required:focus:valid {
-  outline: 2px solid rgb(255, 107, 8);
+  outline: 2px solid $second-text-color;
 }
 
 .reg-form__name:required:focus:invalid,
 .reg-form__tel:required:focus:invalid {
-  outline: 2px solid rgb(255, 255, 255);
+  outline: 2px solid $three-text-color;
 }
