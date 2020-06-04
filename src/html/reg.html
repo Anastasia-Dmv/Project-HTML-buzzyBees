@@ -1,16 +1,37 @@
 <section class="reg">
   <dev class="container">
-    <h3 class="section-title">Регистрация на <span class="section-title__orange">бесплатную</span> телефонную <span
-        class="section-title__orange">консультацию</span> по нюансам <abbr
-        title="Зовнішнє незалежне тестування">ЗНО</abbr> по английскому языку</h3>
-    <p class="section-description text">Оставь заявку на участие в <span class="section-description__orange">бесплатном
-        занятии.<span>С вами свяжется консультант и ответит на вопросы.
+    <h3 class="reg-title reg-title__top">
+      Регистрация на <span class="section__orange">бесплатную</span> телефонную
+      <span class="section__orange">консультацию</span
+      ><span class="reg-title reg-title__sub">
+        по нюансам <abbr title="Зовнішнє незалежне тестування">ЗНО</abbr> по
+        английскому языку
+      </span>
+    </h3>
+
+    <p class="reg-description text">
+      Оставь заявку на участие в
+      <span class="section__orange">бесплатном занятии.</span> С вами свяжется
+      консультант и ответит на вопросы.
     </p>
-    <form action="">
-      <input type="text" name="user-name" placeholder="Имя*" required minlength="2">
-      <input type="tel" name="user-tel" placeholder="Телефон*">
+
+    <form action="reg-form">
+      <input
+        class="reg-form__mail"
+        type="text"
+        name="user-name"
+        placeholder="Имя*"
+        required
+        minlength="2"
+      />
+      <input
+        class="reg-form__tel"
+        type="tel"
+        name="user-tel"
+        placeholder="Телефон*"
+      />
       <button class="btn-orange">
-        <span class="btn-orangre__text">хочу на бесплатное занятие</span>
+        <span class="btn-orange__text">хочу на бесплатное занятие</span>
       </button>
     </form>
   </dev>
