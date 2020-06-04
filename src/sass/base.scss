@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,6 +17,8 @@ body {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -29,6 +33,10 @@ img {
 
 h1 {
   margin: 0;
+}
+
+button {
+  outline: none;
 }
 
 .container {
