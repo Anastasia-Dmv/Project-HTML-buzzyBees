@@ -1,7 +1,6 @@
 .reg {
   display: flex;
   justify-content: center;
-
   align-items: center;
   text-align: center;
   padding-top: 58px;
@@ -22,8 +21,12 @@
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(../images/background@2x.jpg);
   }
-}
 
+  @media(min-width:1680px) {
+    padding-top: 127px;
+    padding-bottom: 100px;
+  }
+}
 
 .reg-title {
   font-size: 14px;
@@ -51,6 +54,7 @@
     font-size: 36px;
     font-weight: bold;
     line-height: 1.334;
+    padding: 0 150px;
   }
 
 }
@@ -112,6 +116,14 @@
 }
 
 
+.reg-form_wrapper {
+  @media(min-width:1680px) {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .reg-form {
   margin-bottom: 28px;
@@ -123,6 +135,11 @@
   padding-left: 10px;
   width: 280px;
   height: 50px;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 2.885;
   background-color: transparent;
   border: 1px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
@@ -135,16 +152,20 @@
   @media(min-width:1280px) {
     width: 618px;
     height: 70px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.8;
   }
 
   @media(min-width:1680px) {
     width: 618px;
     height: 70px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.8;
   }
 
 }
-
-
 
 
 .reg-form__mail {
@@ -164,6 +185,7 @@
 
   &:hover {
     background-color: rgb(255, 255, 255);
+    color: rgb(255, 107, 8);
 
   }
 
@@ -191,8 +213,7 @@
 
 }
 
-.btn-orange:hover,
-.btn-orange:focus .btn-orange__text {
+.btn-orange:hover .btn-orange__text {
   color: rgb(255, 107, 8);
 }
 
