@@ -1,45 +1,48 @@
+* {
+  outline: 1px solid blue;
+}
+
 .contacts {
   padding-top: 34px;
   padding-bottom: 15px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     padding-top: 35px;
     padding-bottom: 35px;
   }
-
 }
 
 .contacts-list {
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
   }
 }
 
 /*-----telephone----*/
 
-
 .contacts__tel {
   text-align: center;
   margin-bottom: 27px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     width: 290px;
     border-right: 1px solid rgb(224, 224, 224);
     order: 2;
-
+  }
+  @media (min-width: 1280px) {
+    width: 500px;
+    padding-left: 100px;
   }
 }
 
-
 .contacts__tel-link {
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: rgb(17, 21, 23);
   font-weight: 600;
   line-height: 20px;
-
 }
 
 .tel-link--icon {
@@ -55,11 +58,15 @@
   text-align: center;
   margin-bottom: 27px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     display: inline-block;
     padding-right: 90px;
     width: 195px;
     order: 3;
+  }
+  @media (min-width: 1280px) {
+    width: 380px;
+    padding-right: 230px;
   }
 }
 
@@ -73,9 +80,13 @@
 .contacts__logo {
   text-align: center;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     width: 200px;
+    text-align: left;
     order: 1;
+  }
+  @media (min-width: 1280px) {
+    width: 360px;
   }
 }
 
@@ -90,12 +101,10 @@
   color: #000000;
   line-height: 1.2;
 
-  @media (min-width: width 768px) {
+  @media (min-width: 768px) {
     font-size: 25px;
     font-weight: bold;
-    line-height: 3.2;
   }
-
 }
 
 .logotype-sub {
@@ -110,11 +119,14 @@
   line-height: 1.2;
   text-transform: uppercase;
 
-  @media (min-width: width 768px) {
+  @media (min-width: 768px) {
     font-size: 8.75px;
-    line-height: 3.333;
+    line-height: 3;
+    letter-spacing: 0.2px;
   }
-
+  @media (min-width: 1280px) {
+    letter-spacing: 0.4px;
+  }
 }
 
 .logotype-orange {
