@@ -245,10 +245,10 @@ abbr[title] {
 
 .reg-form__name:required:focus:valid,
 .reg-form__tel:required:focus:valid {
-  outline: 2px solid $second-text-color;
+  outline: 2px solid rgb(0, 128, 0);
 }
 
 .reg-form__name:required:focus:invalid,
 .reg-form__tel:required:focus:invalid {
-  outline: 2px solid $three-text-color;
+  outline: 2px solid rgb(255, 0, 0);
 }
