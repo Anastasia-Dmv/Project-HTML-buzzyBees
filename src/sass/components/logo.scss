@@ -7,6 +7,7 @@
  font-weight: 800;
  color: #000000;
  line-height: 1.2;
+ 
 }
 .logotype-sub {
  display: block;
@@ -17,7 +18,9 @@
  font-weight: 700;
  color: #000000;
  line-height: 1.2;
+ text-transform: uppercase;
 }
+
 .logotype-orange {
  color: $second-text-color;
 }
