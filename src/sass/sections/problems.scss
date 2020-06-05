@@ -37,6 +37,14 @@
 
   &__item:not(:last-child) {
     margin-bottom: 50px;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 76px;
+    }
+
+    @media (min-width: 1680px) {
+      margin-bottom: 80px;
+    }
   }
 
   &__item:nth-last-of-type(-n + 2) {
