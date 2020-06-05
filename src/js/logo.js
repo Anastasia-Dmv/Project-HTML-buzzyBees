@@ -1,9 +1,9 @@
 $('.js-ham-menu').on('click', function () {
-  if ($(this).hasClass('active')) {
-    $(this).removeClass('active');
+  if ($('.js-header__logo').hasClass('active')) {
+    $('.js-header__logo').removeClass('active');
     $('.js-header__nav-wrap').addClass('close').removeClass('open');
   } else {
-    $(this).addClass('active');
+    $('.js-header__logo').addClass('active');
     $('.js-header__nav-wrap').addClass('open').removeClass('close');
   }
 });

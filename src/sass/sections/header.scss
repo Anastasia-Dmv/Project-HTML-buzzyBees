@@ -6,14 +6,12 @@
 }
 
 .logotype {
+  position: relative;
+  z-index: 20;
   font-size: 15px;
   font-weight: 800;
   color: #000000;
   line-height: 1.2;
-}
-
-.header__logo-reverse {
-  margin: 15px 0 0 16px;
 }
 
 .logotype-reverse {
@@ -31,15 +29,6 @@
   color: #000000;
   line-height: 1.2;
   text-transform: uppercase;
-}
-
-.logotype-sub-reverse {
-  display: block;
-  padding-left: 1px;
-  font-size: 6px;
-  font-weight: 700;
-  color: $three-text-color;
-  line-height: 1.2;
 }
 
 .logotype-orange {
@@ -79,7 +68,8 @@
   &__logo {
     display: inline-block;
     height: auto;
-    color: #000;
+    position: relative;
+    z-index: 20;
     @include sp {
       font-size: 18px;
       order: 0;
@@ -97,14 +87,6 @@
     }
   }
 
-  &__logo-reverse {
-    @include wide-screen {
-      display: none;
-    }
-    @include pc {
-      display: none;
-    }
-  }
   &__nav-wrapper {
     display: flex;
     align-items: center;
@@ -209,16 +191,17 @@
       position: relative;
       overflow-x: hidden;
       overflow-y: auto;
-      padding-top: 80px;
     }
     @include sp {
       margin: 0 auto 25px;
       width: 280px;
+      padding-top: 80px;
     }
 
     @include tab {
       margin: 0 auto 30px;
       width: 280px;
+      padding-top: 150px;
     }
 
     @include pc {
@@ -359,4 +342,30 @@
     transform: translateY(-5px) rotate(45deg);
     background-color: #fff;
   }
+
+  &.active .header__logo {
+    @include sp {
+      font-size: 18px;
+      order: 0;
+    }
+    @include tab {
+      font-size: 24px;
+      order: 0;
+    }
+    @include pc {
+      font-size: 25px;
+    }
+
+    @include wide-screen {
+      font-size: 25px;
+    }
+  }
+}
+
+.header__logo.active .logotype {
+  color: $three-text-color;
+}
+
+.header__logo.active .logotype-sub {
+  color: $three-text-color;
 }
