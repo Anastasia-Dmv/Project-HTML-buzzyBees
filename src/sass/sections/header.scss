@@ -50,27 +50,30 @@
 
 .header {
   display: flex;
-  width: 100%;
   background-color: #fff;
   justify-content: space-between;
   align-items: center;
-  padding-right: 16px;
   position: relative;
   box-sizing: border-box;
   @include sp {
     height: 60px;
-    padding-left: 16px;
+    width: 280px;
+    margin: 0 auto;
   }
   @include tab {
     height: 70px;
-    padding-left: 16px;
+    width: 690px;
+    margin: 0 auto;
+    min-height: 120px;
   }
   @include pc {
     height: 70px;
-    padding-left: 24px;
+    width: 1210px;
+    margin: 0 auto;
   }
   @include wide-screen {
-    paddng-left: 32px;
+    width: 1340px;
+    margin: 0 auto;
   }
 
   &__logo {
@@ -79,9 +82,11 @@
     color: #000;
     @include sp {
       font-size: 18px;
+      order: 0;
     }
     @include tab {
       font-size: 24px;
+      order: 0;
     }
     @include pc {
       font-size: 25px;
@@ -103,6 +108,15 @@
   &__nav-wrapper {
     display: flex;
     align-items: center;
+
+    @include sp {
+      order: 1;
+    }
+
+    @include tab {
+      margin-left: 245px;
+      order: 1;
+    }
   }
 
   &__lesson-link {
@@ -121,7 +135,7 @@
       display: none;
     }
     @include tab {
-      display: none;
+      display: block;
     }
 
     &:hover,
@@ -138,10 +152,11 @@
       top: 0;
       display: none;
       z-index: 10;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.95);
       width: 100%;
       height: 100%;
     }
+
     @include pc {
       display: inline-block;
       width: auto;
@@ -170,7 +185,7 @@
       display: block;
     }
     @include tab {
-      display: block;
+      display: none;
     }
 
     @include pc {
@@ -285,7 +300,6 @@
   @include hamburger {
     display: inline-block;
     box-sizing: border-box;
-    margin-left: auto;
     transition: all 0.3s;
     z-index: 20;
     position: relative;
@@ -296,6 +310,15 @@
     justify-content: center;
     cursor: pointer;
   }
+
+  @include sp {
+    order: 2;
+  }
+
+  @include tab {
+    order: 2;
+  }
+
   @include pc {
     display: none;
   }
