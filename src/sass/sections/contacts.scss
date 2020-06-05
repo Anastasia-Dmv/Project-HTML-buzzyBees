@@ -132,3 +132,26 @@
 .logotype-orange {
   color: $second-text-color;
 }
+/*-----LEGAL-----*/
+.legal{
+  padding:26px 0 28px 0;
+  background-color: rgb(17, 21, 23);
+}
+.legal-text{
+    font-size: 11px;
+    color: rgba(253, 254, 254, 0.42);
+    line-height: 3.409;
+    @media(max-width:767px){
+      text-align: center;
+    }
+    @media (min-width: 1280px){
+        font-size: 14.583px;
+        line-height: 2.571;
+      
+    }
+    @media (min-width: 1680px){
+      line-height: 3;
+    
+  }
+  
+}
