@@ -1,0 +1,137 @@
+.problems {
+  &__list {
+    box-shadow: 4px 7px 16px 6px rgba(29, 29, 27, 0.04);
+    padding: 50px 60px 34px 60px;
+    counter-reset: li;
+    background-color: $second-backcolor;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 90px 100px 50px 100px;
+    }
+    @media (min-width: 1340px) {
+      padding: 108px 80px 74px 100px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @media (min-width: 768px) {
+      width: 232px;
+    }
+    @media (min-width: 1280px) {
+      width: 300px;
+    }
+    @media (min-width: 1340px) {
+      width: 330px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &__item:nth-last-of-type(-n + 2) {
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item:nth-last-of-type(-n + 3) {
+    @media (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item::before {
+    counter-increment: li;
+    content: '0' counter(li);
+    color: $accent-backcolor;
+    font-size: 14px;
+    position: absolute;
+    top: -25px;
+    left: 35px;
+
+    @media (min-width: 1280px) {
+      font-size: 21px;
+      top: -40px;
+    }
+  }
+  &__item::after {
+    @extend %line;
+    position: absolute;
+    top: -16px;
+
+    @media (min-width: 1280px) {
+      top: -26px;
+    }
+  }
+
+  &-wrapper {
+    padding-top: 50px;
+    background-color: $main-backcolor;
+    height: 520px;
+
+    @media (min-width: 768px) {
+      padding-top: 66px;
+      background-image: url(../images/fire.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      height: 340px;
+
+      @media (min-resolution: 192dpi) {
+        background-image: url(../images/fire@2x.png);
+      }
+    }
+    @media (min-width: 1280px) {
+      height: 526px;
+    }
+    @media (min-width: 1340px) {
+      height: 560px;
+    }
+  }
+
+  &__title {
+    color: $three-text-color;
+    margin-bottom: 18px;
+
+    @media (min-width: 768px) {
+      width: 470px;
+      line-height: 33px;
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 740px;
+      line-height: 56.54px;
+      margin-bottom: 48px;
+    }
+    @media (min-width: 1340px) {
+      width: 810px;
+      line-height: 62, 54px;
+      margin-bottom: 70px;
+      letter-spacing: 2.29px;
+    }
+
+    &_help {
+      color: $second-text-color;
+    }
+  }
+}
+
+.trans-word {
+  display: block;
+}
+@media (min-width: 1340px) {
+  .span-block {
+    display: block;
+  }
+}
