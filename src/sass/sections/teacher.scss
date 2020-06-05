@@ -1,0 +1,178 @@
+.teacher {
+  padding: 345px 0 28px;
+
+  @media (min-width: 1280px) {
+    padding: 95px 0 45px;
+  }
+
+  @media (min-width: 1680px) {
+    padding: 320px 0 70px;
+  }
+
+  .section-title {
+    margin-bottom: 25px;
+    font-weight: 800;
+
+    @media (min-width: 768px) {
+      margin-bottom: 33px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 55px;
+      line-height: 1;
+    }
+
+    @media (min-width: 1680px) {
+      margin-bottom: 73px;
+    }
+  }
+
+  &__wrap {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    img {
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__features {
+    @media (min-width: 768px) {
+      flex-basis: 400px;
+    }
+
+    @media (min-width: 1280px) {
+      flex-basis: 630px;
+    }
+
+    @media (min-width: 1680px) {
+      flex-basis: 765px;
+      padding-right: 95px;
+    }
+
+    &-title {
+      margin-bottom: 5px;
+      color: $main-backcolor;
+      font-size: 16px;
+      font-weight: 800;
+
+      @media (min-width: 768px) {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 0.8;
+      }
+
+      @media (min-width: 1280px) {
+        font-size: 29px;
+      }
+    }
+
+    &-list {
+      margin-bottom: 17px;
+      padding-top: 20px;
+      max-width: 360px;
+      border-top: 1px solid rgba($paragraph-text-color, 0.38);
+
+      @media (min-width: 1280px) {
+        padding-top: 35px;
+        max-width: 525px;
+        margin-bottom: 27px;
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 35px;
+      @extend .text;
+      color: $main-backcolor;
+
+      @media (min-width: 1280px) {
+        padding-left: 48px;
+        font-size: 17px;
+        line-height: 29px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      &::before {
+        display: block;
+        content: '';
+        width: 16px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/teacher/check.svg');
+
+        @media (min-width: 1280px) {
+          width: 25px;
+          height: 30px;
+        }
+      }
+    }
+
+    &-about {
+      margin-bottom: 15px;
+      padding-left: 15px;
+      @extend %text-small;
+      color: $paragraph-text-color;
+      line-height: 20px;
+
+      &:first-of-type::before {
+        margin-bottom: 17px;
+        @extend %line;
+
+        @media (min-width: 1280px) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 21px;
+
+        @media (min-width: 1680px) {
+          margin-bottom: 26px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        padding-left: 0;
+      }
+      @media (min-width: 1280px) {
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        line-height: 29px;
+      }
+      @media (min-width: 1680px) {
+        letter-spacing: 0.7px;
+      }
+    }
+  }
+
+  &__link {
+    padding-left: 15px;
+    @extend %text-small;
+    text-decoration: underline;
+    color: $second-text-color;
+
+    @media (min-width: 768px) {
+      padding-left: 0;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 17px;
+    }
+  }
+}

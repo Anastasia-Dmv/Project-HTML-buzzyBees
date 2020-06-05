@@ -1,0 +1,339 @@
+/* LOGO */
+
+.fire-logo {
+  width: 15px;
+  height: 22px;
+}
+
+.logotype {
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.2;
+}
+
+.header__logo-reverse {
+  margin: 15px 0 0 16px;
+}
+
+.logotype-reverse {
+  font-size: 15px;
+  font-weight: 800;
+  color: $three-text-color;
+  line-height: 1.2;
+}
+
+.logotype-sub {
+  display: block;
+  padding-left: 1px;
+  font-size: 6px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.logotype-sub-reverse {
+  display: block;
+  padding-left: 1px;
+  font-size: 6px;
+  font-weight: 700;
+  color: $three-text-color;
+  line-height: 1.2;
+}
+
+.logotype-orange {
+  color: $second-text-color;
+}
+
+/* HAMBURGER */
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 16px;
+  position: relative;
+  box-sizing: border-box;
+  @include sp {
+    height: 60px;
+    padding-left: 16px;
+  }
+  @include tab {
+    height: 70px;
+    padding-left: 16px;
+  }
+  @include pc {
+    height: 70px;
+    padding-left: 24px;
+  }
+  @include wide-screen {
+    paddng-left: 32px;
+  }
+
+  &__logo {
+    display: inline-block;
+    height: auto;
+    color: #000;
+    @include sp {
+      font-size: 18px;
+    }
+    @include tab {
+      font-size: 24px;
+    }
+    @include pc {
+      font-size: 25px;
+    }
+
+    @include wide-screen {
+      font-size: 25px;
+    }
+  }
+
+  &__logo-reverse {
+    @include wide-screen {
+      display: none;
+    }
+    @include pc {
+      display: none;
+    }
+  }
+  &__nav-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__lesson-link {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 45px;
+    width: 250px;
+    height: 50px;
+    color: $second-text-color;
+    border: 3px solid $second-text-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include sp {
+      display: none;
+    }
+    @include tab {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $main-text-color;
+      border: 3px solid $main-text-color;
+    }
+  }
+
+  &__nav-wrap {
+    @include hamburger {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: none;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      height: 100%;
+    }
+    @include pc {
+      display: inline-block;
+      width: auto;
+    }
+    &.open {
+      display: block;
+    }
+    &.close {
+      display: none;
+    }
+  }
+
+  &__nav-lesson-link {
+    margin: 0 auto;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 45px;
+    width: 250px;
+    height: 50px;
+    color: $second-text-color;
+    border: 3px solid $second-text-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include sp {
+      display: block;
+    }
+    @include tab {
+      display: block;
+    }
+
+    @include pc {
+      display: none;
+    }
+    @include wide-screen {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $three-text-color;
+      border: 3px solid $three-text-color;
+    }
+  }
+
+  &__nav-list {
+    padding: 0;
+    margin: 0;
+    @include hamburger {
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding-top: 80px;
+    }
+    @include sp {
+      margin: 0 auto 25px;
+      width: 280px;
+    }
+
+    @include tab {
+      margin: 0 auto 30px;
+      width: 280px;
+    }
+
+    @include pc {
+      display: flex;
+      align-items: center;
+      margin-right: 45px;
+    }
+
+    @include wide-screen {
+      margin-right: 60px;
+    }
+  }
+
+  &__nav-item {
+    @include sp {
+      display: block;
+      margin: 0 auto;
+      text-align: left;
+    }
+    @include tab {
+      display: block;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    @include wide-screen {
+      margin-right: 60px;
+    }
+  }
+
+  &__nav-item:not(:last-child) {
+    @include sp {
+      margin-bottom: 25px;
+    }
+
+    @include tab {
+      margin-bottom: 30px;
+    }
+
+    @include pc {
+      margin-right: 45px;
+    }
+
+    @include wide-screen {
+      margin-right: 60px;
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: #000;
+    @include hamburger {
+      font-size: 21px;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    @include pc {
+      font-size: 12px;
+      font-weight: 700;
+      color: $four-text-color;
+      align-items: center;
+      text-transform: uppercase;
+    }
+    @include wide-screen {
+      font-size: 14px;
+      font-weight: 700;
+      color: $four-text-color;
+      align-items: center;
+      text-transform: uppercase;
+    }
+    &:hover {
+      color: $second-text-color;
+    }
+  }
+}
+
+.ham-menu {
+  @include hamburger {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: auto;
+    transition: all 0.3s;
+    z-index: 20;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  @include pc {
+    display: none;
+  }
+  &__line {
+    @include hamburger {
+      display: inline-block;
+      box-sizing: border-box;
+      transition: all 0.3s;
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: #000;
+      border-radius: 5px;
+    }
+    &:nth-of-type(1) {
+      top: 10px;
+    }
+    &:nth-of-type(2) {
+      top: 16px;
+    }
+    &:nth-of-type(3) {
+      bottom: 16px;
+    }
+  }
+  // hamburger menu animation
+  &.active {
+    border: none;
+  }
+  &.active .ham-menu__line:nth-of-type(1) {
+    transform: translateY(7px) rotate(-45deg);
+    background-color: #fff;
+  }
+  &.active .ham-menu__line:nth-of-type(2) {
+    transition-duration: 0s;
+    opacity: 0;
+  }
+  &.active .ham-menu__line:nth-of-type(3) {
+    transform: translateY(-5px) rotate(45deg);
+    background-color: #fff;
+  }
+}
