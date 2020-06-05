@@ -95,10 +95,6 @@
 }
 
 .logotype {
-  font-size: 15px;
-  font-weight: 800;
-  color: #000000;
-  line-height: 1.2;
 
   @media (min-width: 768px) {
     font-size: 25px;
@@ -106,18 +102,8 @@
   }
 }
 
-.logotype-sub {
-  display: block;
-}
 
 .logotype-sub {
-  padding-left: 1px;
-  font-size: 6px;
-  font-weight: 700;
-  color: #000000;
-  line-height: 1.2;
-  text-transform: uppercase;
-
   @media (min-width: 768px) {
     font-size: 8.75px;
     line-height: 3;
@@ -126,10 +112,6 @@
   @media (min-width: 1280px) {
     letter-spacing: 0.4px;
   }
-}
-
-.logotype-orange {
-  color: $second-text-color;
 }
 /*-----LEGAL-----*/
 .legal{
