@@ -12,6 +12,21 @@
   line-height: 1.2;
 }
 
+.logotype-sub {
+  display: block;
+  padding-left: 1px;
+  font-size: 6px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.logotype-orange {
+  color: $second-text-color;
+}
+
+
 .header__logo-reverse {
   margin: 15px 0 0 16px;
 }
@@ -23,15 +38,6 @@
   line-height: 1.2;
 }
 
-.logotype-sub {
-  display: block;
-  padding-left: 1px;
-  font-size: 6px;
-  font-weight: 700;
-  color: #000000;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
 
 .logotype-sub-reverse {
   display: block;
@@ -42,9 +48,7 @@
   line-height: 1.2;
 }
 
-.logotype-orange {
-  color: $second-text-color;
-}
+
 
 /* HAMBURGER */
 
