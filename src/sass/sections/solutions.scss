@@ -1,3 +1,47 @@
 .solutions {
   padding-top: 200px;
+
+  &-title {
+    padding-top: 44px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+}
+
+.solutions-list {
+  &__item {
+    margin-bottom: 16px;
+    padding-top: 96px;
+    padding-bottom: 44px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 4px 7px 24px 8px rgba(29, 29, 27, 0.11);
+
+    // &:nth-child(2) .solutions-list__title::before {
+    //   background-image: url(../images/global.svg);
+    // }
+  }
+
+  &__title {
+    color: #111517;
+    padding-bottom: 18px;
+
+    &::after {
+      @extend %line;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      width: 45px;
+      height: 45px;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    @extend %text-small;
+  }
 }
