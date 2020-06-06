@@ -215,8 +215,6 @@ abbr[title] {
 
 }
 
-
-
 ::placeholder {
   font-size: 13px;
   font-family: $main-font-famaly;
@@ -226,16 +224,12 @@ abbr[title] {
 
   @media(min-width:1280px) {
     font-size: 21px;
-    font-weight: bold;
     line-height: 1.8;
 
   }
-
   @media (min-width: width 1680px) {
     font-size: 21px;
-    font-weight: bold;
     line-height: 1.8;
-
   }
 }
 
