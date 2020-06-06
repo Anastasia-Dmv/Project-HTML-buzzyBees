@@ -1,8 +1,10 @@
 /* LOGO */
 
-.fire-logo {
-  width: 15px;
-  height: 22px;
+.fire-logotype {
+  width: 25px;
+  height: 33px;
+  position: absolute;
+  transform: translate(-15px, 0px);
   fill: $second-text-color;
 }
 

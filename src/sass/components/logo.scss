@@ -1,26 +1,27 @@
 .fire-logo {
- width: 15px;
- height: 22px;
+  width: 25px;
+  height: 33px;
+  position: absolute;
+  transform: translate(-15px, 0px);
+  fill: $second-text-color;
 }
 .logotype {
- font-size: 15px;
- font-weight: 800;
- color: #000000;
- line-height: 1.2;
- 
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.2;
 }
+
 .logotype-sub {
- display: block;
-}
-.logotype-sub {
- padding-left: 1px;
- font-size: 6px;
- font-weight: 700;
- color: #000000;
- line-height: 1.2;
- text-transform: uppercase;
+  display: block;
+  padding-left: 1px;
+  font-size: 6px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .logotype-orange {
- color: $second-text-color;
+  color: $second-text-color;
 }
