@@ -121,11 +121,8 @@ abbr[title] {
     margin-bottom: 20px;
   }
 
-  &__tel {
-    margin-bottom: 50px;
-  }
-
   &_wrapper {
+    margin-bottom: 50px;
     @media(min-width:1680px) {
 
       display: flex;
@@ -143,10 +140,10 @@ abbr[title] {
   padding-left: 10px;
   width: 280px;
   height: 50px;
-  font-size: 13px;
+  font-size: 15px;
   font-family: $main-font-famaly;
   color: $three-text-color;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 2.885;
   background-color: transparent;
   border: 1px solid $three-text-color;
@@ -155,13 +152,13 @@ abbr[title] {
   @media (min-width: 768px) {
     width: 400px;
     height: 50px;
+    font-size: 18px;
   }
 
   @media(min-width:1280px) {
     width: 618px;
     height: 70px;
     font-size: 21px;
-    font-weight: bold;
     line-height: 1.8;
     padding-left: 20px;
   }
@@ -199,23 +196,21 @@ abbr[title] {
     width: 350px;
     height: 68px;
   }
-
-}
-
-.btn-orange__text {
+  &__text {
   font-size: 11px;
   font-family: $main-font-famaly;
   color: $three-text-color;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 
-  @media(min-width:1280px) {
+   @media(min-width:1280px) {
     font-size: 14px;
-    font-weight: bold;
     letter-spacing: 0.05em;
 
-  }
+   }
+
+ }
 
 }
 
@@ -230,25 +225,21 @@ abbr[title] {
 
   @media(min-width:1280px) {
     font-size: 21px;
-    font-weight: bold;
     line-height: 1.8;
 
   }
-
   @media (min-width: width 1680px) {
     font-size: 21px;
-    font-weight: bold;
     line-height: 1.8;
-
   }
 }
 
 .reg-form__name:required:focus:valid,
 .reg-form__tel:required:focus:valid {
-  outline: 2px solid $second-text-color;
+  outline: 2px solid rgb(0, 128, 0);
 }
 
 .reg-form__name:required:focus:invalid,
 .reg-form__tel:required:focus:invalid {
-  outline: 2px solid $three-text-color;
+  outline: 2px solid rgb(255, 0, 0);
 }
