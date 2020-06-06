@@ -1,0 +1,40 @@
+
+.btn-orange {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    border: 2px solid $second-text-color;
+    background-color: $second-text-color;
+  
+    &:hover {
+      background-color: $three-text-color;
+      color: $second-text-color;
+  
+    }
+  
+    &:hover .btn-orange__text {
+      color: $second-text-color;
+    }
+  
+    @media(min-width:1280px) {
+      width: 350px;
+      height: 68px;
+    }
+    &__text {
+    font-size: 11px;
+    font-family: $main-font-famaly;
+    color: $three-text-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  
+     @media(min-width:1280px) {
+      font-size: 14px;
+      letter-spacing: 0.05em;
+  
+     }
+  
+   }
+  
+  }
+  

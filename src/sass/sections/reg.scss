@@ -196,10 +196,7 @@ abbr[title] {
     width: 350px;
     height: 68px;
   }
-
-}
-
-.btn-orange__text {
+  &__text {
   font-size: 11px;
   font-family: $main-font-famaly;
   color: $three-text-color;
@@ -207,13 +204,17 @@ abbr[title] {
   text-transform: uppercase;
   text-align: center;
 
-  @media(min-width:1280px) {
+   @media(min-width:1280px) {
     font-size: 14px;
     letter-spacing: 0.05em;
 
-  }
+   }
+
+ }
 
 }
+
+
 
 ::placeholder {
   font-size: 13px;
