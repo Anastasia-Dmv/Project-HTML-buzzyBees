@@ -1,0 +1,50 @@
+.slider {
+  &__item {
+    width: 280px;
+    box-shadow: 4px 7px 35px 11px rgba(29, 29, 27, 0.09);
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  &__name {
+    color: $second-text-color;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 29.17px;
+    padding-top: 18px;
+  }
+
+  &__education {
+    color: $paragraph-text-color;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16.67px;
+    letter-spacing: 0.55px;
+    padding-bottom: 14px;
+  }
+
+  &__about {
+    color: $main-text-color;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.55px;
+
+    &_link {
+      color: $second-text-color;
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 18px;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 24px;
+    fill: #5670a9;
+  }
+}
