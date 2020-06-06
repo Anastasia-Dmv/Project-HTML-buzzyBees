@@ -1,0 +1,15 @@
+%text-small {
+
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+%line {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: $second-text-color;
+}
