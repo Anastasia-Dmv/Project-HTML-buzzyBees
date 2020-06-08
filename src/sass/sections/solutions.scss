@@ -174,9 +174,11 @@
   &__description {
     @extend %text-small;
     transition: all 500ms linear;
+    color: $paragraph-text-color;
 
     @media (min-width: 1280px) {
       line-height: 31.25px;
+      font-size: 15px;
     }
 
     @media (min-width: 1680px) {
