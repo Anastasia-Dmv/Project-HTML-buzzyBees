@@ -22,7 +22,9 @@
 
 .contacts__tel {
   text-align: center;
-  margin-bottom: 27px;
+  @media (max-width:767px){
+    margin-bottom: 27px;
+  }
 
   @media (min-width: 768px) {
     width: 290px;
@@ -53,8 +55,11 @@
 
 .contacts__instagram {
   text-align: center;
-  margin-bottom: 27px;
 
+  @media (max-width:767px){
+    margin-bottom: 27px;
+  }
+  
   @media (min-width: 768px) {
     display: inline-block;
     padding-right: 90px;
