@@ -234,3 +234,13 @@
     display: flex;
   }
 }
+
+.about-toggle_show {
+  cursor: pointer;
+  color: $second-text-color;
+  text-decoration: underline;
+}
+
+.slick-dots li.slick-active {
+  border: 2px solid $accent-backcolor;
+}
