@@ -1,0 +1,137 @@
+.guarantees {
+  padding: 28px 0 25px;
+
+  @media (min-width: 1280px) {
+    padding: 45px 0;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 70px 0 60px;
+  }
+  .section-title {
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: 27px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 35px;
+      line-height: 1;
+    }
+
+    @media (min-width: 1680px) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    padding: 22px 0 24px;
+
+    @media (min-width: 768px) {
+      padding: 22px 55px 24px;
+      background-color: #f1f1f1;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 45px 130px 40px 115px;
+    }
+
+    @media (min-width: 1680px) {
+      padding: 60px 135px 55px 90px;
+    }
+
+    &-wrap {
+      background-color: #f1f1f1;
+
+      @media (min-width: 768px) {
+        // margin: 0 auto;
+        // width: 688px;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 35px;
+    color: $main-text-color;
+    @extend %text-small;
+    font-weight: 500;
+
+    @media (min-width: 1280px) {
+      padding-left: 57px;
+      font-size: 18px;
+      line-height: 29px;
+    }
+
+    @media (min-width: 1680px) {
+      font-size: 21px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @media (min-width: 1280px) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      left: -2px;
+      top: 0;
+      display: block;
+      content: '';
+      width: 18px;
+      height: 23px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/guarantees/fire.svg);
+
+      @media (min-width: 1280px) {
+        left: -6px;
+        width: 27px;
+        height: 34px;
+      }
+    }
+
+    &:not(:last-child)::after {
+      content: '';
+      display: block;
+      border-width: 1px;
+      border-color: rgb(186, 186, 186);
+      border-style: dotted;
+      position: absolute;
+      width: 1px;
+      height: 80px;
+      top: 18px;
+      left: 6px;
+
+      @media (min-width: 768px) {
+        height: 45px;
+      }
+
+      @media (min-width: 1280px) {
+        top: 32px;
+      }
+
+      @media (min-width: 1680px) {
+        top: 31px;
+        height: 47px;
+      }
+    }
+
+    &:nth-child(2) .accent {
+      @media (min-width: 1280px) and (max-width: 1679px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.accent {
+  color: $second-text-color;
+}

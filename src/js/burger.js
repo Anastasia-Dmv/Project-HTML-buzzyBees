@@ -7,7 +7,6 @@ $('.js-ham-menu').on('click', function () {
     $('.js-header__nav-wrap').addClass('open').removeClass('close');
   }
 });
-
 $(window).on('load resize', function () {
   const ww = window.innerWidth;
 
