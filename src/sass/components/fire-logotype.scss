@@ -1,39 +1,65 @@
-.fire-logotype {
-    width: 25px;
-    height: 33px;
-    position: absolute;
-    transform: translate(-15px, 0px);
-    fill: $second-text-color;
-}
+/* LOGO */
 
-.logotype {
-    position: relative;
-    z-index: 20;
+.fire-logotype {
+    width: 15px;
+    height: 22px;
+    fill: $second-text-color;
+    @include tab {
+      width: 21px;
+      height: 30px;
+    }
+    @include pc {
+      width: 21px;
+      height: 30px;
+    }
+    @include wide-screen {
+      width: 21px;
+      height: 30px;
+    }
+  }
+  .logotype {
     font-size: 15px;
     font-weight: 800;
     color: #000000;
     line-height: 1.2;
-}
-
-.logotype-reverse {
-    font-size: 15px;
-    font-weight: 800;
-    color: $three-text-color;
+    @include tab {
+      font-size: 25px;
+    }
+  
+    @include pc {
+      font-size: 25px;
+    }
+  
+    @include wide-screen {
+      font-size: 25px;
+    }
+  }
+  
+  .logotype-sub {
+    display: block;
+    padding-left: 1px;
+    font-size: 6px;
+    font-weight: 700;
+    color: #000000;
     line-height: 1.2;
-}
-
-.logotype-sub {
- display: block;
-}
-.logotype-sub {
- padding-left: 1px;
- font-size: 6px;
- font-weight: 700;
- color: #000000;
- line-height: 1.2;
- text-transform: uppercase;
-}
-
-.logotype-orange {
- color: $second-text-color;
-}
+    text-transform: uppercase;
+    @include tab {
+      font-size: 9px;
+      letter-spacing: 0.6px;
+    }
+  
+    @include pc {
+      font-size: 9px;
+      letter-spacing: 0.6px;
+    }
+  
+    @include wide-screen {
+      font-size: 9px;
+      letter-spacing: 0.6px;
+    }
+  }
+  
+  .logotype-orange {
+    color: $second-text-color;
+  }
+  
