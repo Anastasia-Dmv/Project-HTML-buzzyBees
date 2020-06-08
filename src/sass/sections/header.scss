@@ -43,16 +43,20 @@
   color: #000000;
   line-height: 1.2;
   text-transform: uppercase;
+
   @include tab {
     font-size: 9px;
+    letter-spacing: 0.6px;
   }
 
   @include pc {
     font-size: 9px;
+    letter-spacing: 0.5px;
   }
 
   @include wide-screen {
     font-size: 9px;
+    letter-spacing: 0.5px;
   }
 }
 
