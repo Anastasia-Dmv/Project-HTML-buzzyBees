@@ -15,6 +15,12 @@ $('.header__nav-link').on('click', function () {
   $('.js-header__nav-wrap').addClass('close').removeClass('open');
   $('body').css('overflow', 'visible');
 });
+$('.header__nav-lesson-link').on('click', function () {
+  $('.js-header__logo').removeClass('active');
+  $('.js-ham-menu').removeClass('active');
+  $('.js-header__nav-wrap').addClass('close').removeClass('open');
+  $('body').css('overflow', 'visible');
+});
 $(window).on('load resize', function () {
   const ww = window.innerWidth;
   if (ww > 959 && $('.js-header__nav-wrap').hasClass('close')) {

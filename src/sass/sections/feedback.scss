@@ -1,0 +1,246 @@
+.feedback-title {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width: 768px) {
+    padding-top: 52px;
+    padding-bottom: 26px;
+    line-height: 62.54px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 90px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: 1680px) {
+    padding-top: 120px;
+  }
+}
+
+.slider {
+  box-shadow: 4px 7px 35px 11px rgba(29, 29, 27, 0.09);
+  position: relative;
+
+  @media (min-width: 1280px) {
+    width: 1065px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    width: 280px;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      padding-left: 34px;
+      padding-right: 64px;
+      padding-top: 40px;
+      padding-bottom: 46px;
+    }
+
+    @media (min-width: 1280px) {
+      padding-left: 86px;
+      padding-bottom: 136px;
+    }
+  }
+
+  &__info {
+    padding-top: 36px;
+
+    @media (min-width: 768px) {
+      padding-top: 0px;
+      padding-left: 44px;
+      width: 500px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 700px;
+    }
+  }
+
+  &__name {
+    color: $second-text-color;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 29.17px;
+    padding-top: 18px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 29.17px;
+      padding-bottom: 15px;
+      padding-top: 0px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__education {
+    color: $paragraph-text-color;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16.67px;
+    letter-spacing: 0.55px;
+    padding-bottom: 14px;
+
+    @media (min-width: 768px) {
+      font-size: 13px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__about {
+    color: $main-text-color;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.55px;
+
+    @media (min-width: 1280px) {
+      font-size: 17px;
+    }
+
+    &_link {
+      color: $second-text-color;
+    }
+  }
+
+  &__image-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      padding-top: 20px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 145px;
+      height: 145px;
+      margin: 0px;
+      padding-top: 0px;
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    margin-top: 18px;
+
+    width: 25px;
+    height: 24px;
+    fill: #5670a9;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      display: block;
+      margin-top: 16px;
+    }
+  }
+}
+
+.slick {
+  &-dots li {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+
+    &:nth-child(1) {
+      background-image: url(../images/girl01-dots-mob.png);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../images/girl02-dots-mob.png);
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/girl03-dots-mob.png);
+    }
+  }
+
+  &-arrow {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(230px);
+    z-index: 50;
+
+    @media (min-width: 768px) {
+      transform: translateY(30px);
+    }
+  }
+
+  &-next {
+    background-image: url(../images/arrow-right.png);
+    right: 0px;
+
+    @media (min-width: 1280px) {
+      right: -60px;
+    }
+  }
+
+  &-prev {
+    background-image: url(../images/arrow-left.png);
+    left: 0px;
+
+    @media (min-width: 1280px) {
+      left: -60px;
+    }
+  }
+
+  &-dotted.slick-slider {
+    margin-bottom: 124px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 154px;
+    }
+  }
+
+  &-dots {
+    bottom: -70px;
+
+    @media (min-width: 768px) {
+      bottom: -80px;
+    }
+  }
+  &-prev:hover,
+  &-prev:focus {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/arrow-left.png);
+  }
+
+  &-next:hover,
+  &-next:focus {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/arrow-right.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+}
+
+.about-toggle_show {
+  cursor: pointer;
+  color: $second-text-color;
+  text-decoration: underline;
+}
+
+.slick-dots li.slick-active {
+  border: 2px solid $accent-backcolor;
+}

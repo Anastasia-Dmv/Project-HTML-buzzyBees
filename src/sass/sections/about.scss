@@ -1,0 +1,379 @@
+.container {
+  width: 280px;
+  margin: 0 auto;
+
+  @include tab {
+    width: 690px;
+  }
+  @include pc {
+    width: 1210px;
+  }
+  @include wide-screen {
+    width: 1340px;
+  }
+}
+
+.about {
+  padding-top: 35px;
+  margin-bottom: 50px;
+  background-image: url(../images/aboutsection/bgaboutmobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position-y: -230px;
+
+  @include tab {
+    background-image: url(../images/aboutsection/bgabouttablet.jpg);
+    background-position-y: -70px;
+    margin-bottom: 52px;
+  }
+  @include pc {
+    background-image: url(../images/aboutsection/bgpcabout.jpg);
+    background-position-y: -130px;
+    margin-bottom: 85px;
+  }
+  @include wide-screen {
+    background-image: url(../images/aboutsection/bgwidescreenabout.jpg);
+    background-position-y: -200px;
+    margin-bottom: 125px;
+    padding-top: 150px;
+  }
+
+  &__title {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 29px;
+    color: $main-text-color;
+    letter-spacing: 1.2px;
+    margin-bottom: 36px;
+
+    @include tab {
+      font-size: 26px;
+      line-height: 33px;
+      margin-bottom: 36px;
+    }
+    @include pc {
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 40px;
+    }
+    @include wide-screen {
+      font-size: 58px;
+      line-height: 75px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.about__photo-img {
+  @include sp {
+    margin: 0 auto;
+  }
+}
+
+.about__wrapper {
+  @include tab {
+    margin-bottom: 117px;
+  }
+  @include pc {
+    margin-bottom: 130px;
+  }
+
+  @include wide-screen {
+    margin-bottom: 280px;
+  }
+}
+
+.about__wrapper-text {
+  @include tab {
+    width: 285px;
+  }
+  @include pc {
+    width: 500px;
+  }
+
+  @include wide-screen {
+    width: 600px;
+  }
+}
+
+.about__wrapper-photo {
+  @include sp {
+    margin-bottom: 87px;
+  }
+
+  @include wide-screen {
+    transform: translate(600px, -100px);
+    position: absolute;
+  }
+}
+
+.about__wrapper {
+  @include tab {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include wide-screen {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.about__text--grey {
+  font-size: 15px;
+  line-height: 20px;
+  color: $four-text-color;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 8px;
+
+  @include pc {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  @include wide-screen {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+
+.about__text {
+  font-size: 15px;
+  line-height: 20px;
+  color: $main-text-color;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 36px;
+
+  @include tab {
+    margin-bottom: 35px;
+  }
+  @include pc {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 64px;
+  }
+  @include wide-screen {
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 42px;
+  }
+}
+
+.about__text--orange {
+  color: $second-text-color;
+  display: block;
+
+  @include pc {
+    display: inline;
+  }
+}
+
+.btn-orange-about {
+  @include sp {
+    margin: 0 0 35px 15px;
+  }
+}
+
+.about__list {
+  @include tab {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include wide-screen {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about__item-svg-wrapper {
+  border: 2px solid $second-text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include sp {
+    width: 58px;
+    height: 58px;
+  }
+
+  @include tab {
+    width: 58px;
+    height: 58px;
+  }
+  @include pc {
+    width: 103px;
+    height: 103px;
+  }
+  @include wide-screen {
+    width: 103px;
+    height: 103px;
+  }
+}
+
+.about__item-svg-wrapper::after {
+  display: block;
+  content: '';
+  background-color: $second-backcolor;
+  width: 35px;
+  height: 6px;
+  transform: translateX(15px) rotate(-90deg);
+
+  @include pc {
+    width: 75px;
+    transform: translateX(33px) rotate(-90deg);
+  }
+  @include wide-screen {
+    width: 75px;
+    transform: translateX(33px) rotate(-90deg);
+  }
+}
+
+.about__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  white-space: pre-wrap;
+  position: relative;
+
+  @include sp {
+    margin: 0 auto;
+  }
+
+  @include pc {
+    width: 375px;
+    line-height: 28px;
+    font-size: 18px;
+  }
+  @include wide-screen {
+    width: 420px;
+    line-height: 20px;
+    font-size: 18px;
+    line-height: 33px;
+  }
+}
+
+@include sp {
+  .about__item:nth-child(-n + 2) {
+    margin-bottom: 25px;
+  }
+}
+
+.about__item-word-wrapper {
+  width: 130px;
+  text-align: left;
+  word-wrap: break-word;
+  position: absolute;
+  right: 0;
+
+  @include pc {
+    width: 290px;
+    right: 0;
+  }
+  @include wide-screen {
+    width: 325px;
+    right: 10px;
+  }
+}
+
+.about__item-icon {
+  transform: translateX(15px);
+
+  @include pc {
+    transform: translateX(33px);
+  }
+  @include wide-screen {
+    transform: translateX(33px);
+  }
+}
+
+.about__item-icon-first {
+  fill: $second-text-color;
+
+  @include sp {
+    width: 30px;
+    height: 36px;
+  }
+
+  @include tab {
+    width: 30px;
+    height: 36px;
+  }
+  @include pc {
+    width: 39px;
+    height: 45px;
+  }
+  @include wide-screen {
+    width: 39px;
+    height: 45px;
+  }
+}
+
+.about__item-icon-second {
+  fill: $second-text-color;
+
+  @include sp {
+    width: 34px;
+    height: 34px;
+  }
+
+  @include tab {
+    width: 34px;
+    height: 34px;
+  }
+  @include pc {
+    width: 44px;
+    height: 45px;
+  }
+  @include wide-screen {
+    width: 44px;
+    height: 45px;
+  }
+}
+
+.about__item-icon-third {
+  fill: $second-text-color;
+
+  @include sp {
+    width: 30px;
+    height: 36px;
+  }
+
+  @include tab {
+    width: 30px;
+    height: 36px;
+  }
+  @include pc {
+    width: 40px;
+    height: 48px;
+  }
+  @include wide-screen {
+    width: 40px;
+    height: 48px;
+  }
+}
+.button-orange__link{
+  text-align: center;
+  line-height: 3em;
+  @media (min-width: 1280px){
+    line-height: 4em;
+
+  }
+
+}
