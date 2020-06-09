@@ -8,14 +8,17 @@
 @import './helpers/fonts.scss';
 @import './helpers/mixins.scss';
 @import './helpers/placeholders.scss';
+@import './helpers/slick.scss';
+@import './helpers/slick-theme.scss';
 
 
 @import './base.scss';
 
 @import './components/btn-orange.scss';
+@import './components/fire-logotype.scss';
 @import './components/section-title.scss';
 @import './components/text.scss';
-@import './components/logo.scss';
+
 
 @import './sections/header.scss';
 @import './sections/about.scss';

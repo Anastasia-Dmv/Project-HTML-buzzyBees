@@ -5,10 +5,13 @@
     height: 50px;
     border: 2px solid $second-text-color;
     background-color: $second-text-color;
+    transition: all 100ms linear;
   
+    
     &:hover {
       background-color: $three-text-color;
       color: $second-text-color;
+      
   
     }
   
