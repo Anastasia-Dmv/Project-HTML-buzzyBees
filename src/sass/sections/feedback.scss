@@ -1,23 +1,41 @@
+.feedback-section{
+  padding: 20px 0 126px 0;
+  @media (min-width: 768px) {
+    padding: 30px 0 70px 0;
+  }
+  @media (min-width: 1280px){
+    padding: 60px 0 110px 0;
+  }
+  @media (min-width: 1680px){
+    padding: 90px 0 120px 0;
+  }
+
+}
+
+
+
+
 .feedback-title {
   text-align: center;
-  padding-top: 16px;
+  // padding-top: 16px;
   padding-bottom: 16px;
 
   @media (min-width: 768px) {
-    padding-top: 52px;
+    // padding-top: 52px;
     padding-bottom: 26px;
     line-height: 62.54px;
   }
 
   @media (min-width: 1280px) {
-    padding-top: 90px;
+    // padding-top: 90px;
     padding-bottom: 34px;
   }
 
   @media (min-width: 1680px) {
-    padding-top: 120px;
+    // padding-top: 120px;
   }
 }
+/*-------*/
 
 .slider {
   box-shadow: 4px 7px 35px 11px rgba(29, 29, 27, 0.09);
@@ -167,13 +185,29 @@
     &:nth-child(3) {
       background-image: url(../images/girl03-dots-mob.png);
     }
+
+    &:nth-child(4) {
+      background-image: url(../images/girl04-dots-mob.png);
+    }
+
+    &:nth-child(5) {
+      background-image: url(../images/girl05-dots-mob.png);
+    }
+
+    &:nth-child(6) {
+      background-image: url(../images/girl06-dots-mob.png);
+    }
+
+    &:nth-child(7) {
+      background-image: url(../images/girl07-dots-mob.png);
+    }
   }
 
   &-arrow {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateY(230px);
+    transform: translateY(250px);
     z-index: 50;
 
     @media (min-width: 768px) {
@@ -200,15 +234,15 @@
   }
 
   &-dotted.slick-slider {
-    margin-bottom: 124px;
+    margin-bottom: 80px;
 
-    @media (min-width: 768px) {
-      margin-bottom: 154px;
-    }
+    // @media (min-width: 768px) {
+    //   margin-bottom: 154px;
+    // }
   }
 
   &-dots {
-    bottom: -70px;
+    bottom: -120px;
 
     @media (min-width: 768px) {
       bottom: -80px;
@@ -242,5 +276,6 @@
 }
 
 .slick-dots li.slick-active {
+  transition: all 200ms linear;
   border: 2px solid $accent-backcolor;
 }
