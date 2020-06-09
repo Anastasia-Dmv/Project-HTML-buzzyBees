@@ -20,15 +20,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  background-position: top;
+  background-position-y: -230px;
 
   @include tab {
+    background-image: url(../images/aboutsection/bgabouttablet.jpg);
+    background-position-y: -70px;
     margin-bottom: 52px;
   }
   @include pc {
+    background-image: url(../images/aboutsection/bgpcabout.jpg);
+    background-position-y: -130px;
     margin-bottom: 85px;
   }
   @include wide-screen {
+    background-image: url(../images/aboutsection/bgwidescreenabout.jpg);
+    background-position-y: -200px;
     margin-bottom: 125px;
     padding-top: 150px;
   }
