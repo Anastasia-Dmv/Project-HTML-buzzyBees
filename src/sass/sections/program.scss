@@ -4,6 +4,7 @@
 
   &-wrapper {
     position: relative;
+    
   }
 
   &-title {
@@ -18,7 +19,7 @@
 
   &-list {
     position: relative;
-    padding: 0 0 132px 30px;
+    padding: 0 0 0 30px;
     margin-left: 40px;
     
     &::after {
@@ -26,6 +27,8 @@
       display: block;
       content: "";
       background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     
     &__item {
@@ -36,7 +39,7 @@
       color: $three-text-color;
       font-weight: 700;
       width: 214px;
-      margin-bottom: 20px;
+      
 
       &::before {
         position: absolute;
@@ -60,55 +63,47 @@
 }
 
 // <!--CATEGORY_LIST-->
-.category-list {
-  margin-bottom: 26px;
-  
-  &__item {
-    margin-top: 14px;
+.category-list__item {
+  margin-top: 14px;
 
-    &:not(:last-child) {
-      margin-bottom: 14px;
-    }
+  &--description {
+    position: relative;
+    padding-left: 38px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: $second-text-color;
+    font-weight: 500;
 
-    &--description {
-      position: relative;
-      padding-left: 38px;
-      font-size: 13px;
-      letter-spacing: 1px;
-      line-height: 29px;
-      color: $second-text-color;
-      font-weight: 500;
-      margin-bottom: 14px;
-
-      &::before {
-        position: absolute;
-        display: block;
-        content: "";
-        width: 24px;
-        height: 2px;
-        background: $accent-backcolor;
-        top: 15px;
-        left: 0;
-      }
-    }
-
-    &--span {
-      opacity: 0;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 24px;
+      height: 2px;
+      background: $accent-backcolor;
+      top: 15px;
+      left: 0;
     }
   }
+
+  &--span {
+    opacity: 0;
+  }
+
 }
+
 
 // <!--TOPIC_LIST-->
 .topic-list {
   margin-top: 20px; 
+  opacity: 0.5;
 
   &__item {
     color: $paragraph-text-color;
+  
     @extend %text-small;
-
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
+    
   }
 }
 
@@ -158,11 +153,14 @@
 .advantages-wrapper {
   position: absolute;
   left: 0;
-  
   margin: 0 auto;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .program-wrapper {
+    padding-bottom: 132px;
+  }
+  
   .program-list {
     border-left: 2px solid #546264;
   }
@@ -171,7 +169,7 @@
     width: 142px;
     height: 170px;
     background-image: url(../images/program-images/class-mobile.jpg);
-    bottom: 0;
+    bottom: -118px;
     right: -20px;
   }
 
@@ -179,8 +177,17 @@
     left: -30px;
   }
 
+  .category-list {
+    margin-bottom: 26px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 14px;
+    } 
+  }
+
   .advantages-wrapper {
-    bottom: -570px;
+    bottom: 0px;
+    transform: translateY(78%);
     
   }  
 }
@@ -188,7 +195,7 @@
 // <!--TABLET-->
 @media (min-width: 768px) {
   .program {
-    padding-bottom: 252px;
+    padding-bottom: 358px;
 
     &-title {
       text-align: left;
@@ -202,15 +209,13 @@
 
   .program-list {
     margin-left: 90px;
-    padding: 0 0 110px 50px;
+    padding: 0 0 0 50px;
     
-    &__item {
-      width: 132px;
-    }
   }
 
   .advantages-wrapper {
     width: 100%;
+    bottom: -30%;
   }
 
   .advantages-title {
@@ -239,15 +244,22 @@
     &::after {
       width: 404px;
       height: 280px;
-      right: 52px;
+      right: -39px;
+      bottom: -70px;
       background-image: url(../images/program-images/class-tablet-1.jpg);
     }
 
-    &__item::before {
-      left: -51px;
+    &__item {
+      margin-bottom: 20px;
+      width: 132px;
+    
+      &::before {
+        left: -51px;
+      }
     }
   }
 
+ 
   @media (min-resolution: 192dpi) {
     .program-list::after {
       background-image: url(../images/program-images/class-tablet-1@2x.jpg);
@@ -275,8 +287,12 @@
   }
   
   .advantages-wrapper {
-    bottom: -276px;
     transform: translateY(50%);
+  }
+  
+
+  .topic-list__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -284,7 +300,7 @@
 // <!--DESKTOP-->
 @media (min-width: 1280px) {
   .program {
-    padding: 80px 0 400px;
+    padding: 80px 0 494px;
 
     &::before {
       display: block;
@@ -314,6 +330,7 @@
       padding-top: 44px;
       font-size: 19px;
       letter-spacing: 2px;
+      width: 224px;
       
       &::before {
         width: 17px;
@@ -322,25 +339,22 @@
         top: 0;
       }
     }
+
   }
 
-  .category-list {
+  .category-list__item {
     margin-top: 40px;
-
-    &__item {
-      width: 212px;
-
-      &--description {
-        font-size: 18px;
-      }
-    }
+    
+    &--description {
+      font-size: 18px;
+    } 
   }
-
+  
   .topic-list__item {
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 19px;
+    letter-spacing: 0.5px;
     line-height: 29px;
-    opacity: 0.5;
+    
   }
 
   .advantages-list {
@@ -371,7 +385,7 @@
   }
  
   .advantages-wrapper {
-    bottom: -400px;
+    bottom: -495px;
   }
 }
 
@@ -379,10 +393,10 @@
   .program-list::after {
     width: 546px;
     height: 354px;
-    right: 52px;
+    // right: 52px;
     background-image: url(../images/program-images/class-desktop-1.jpg);
-    bottom: 86px;
-    left: -35px;
+    bottom: 25px;
+    left: -80px;
     transform: translateY(50%);  
   }
 
@@ -395,7 +409,7 @@
 // <!--LARGE DESKTOP-->
 @media (min-width: 1680px) {
   .program {
-    padding: 130px 0 374px 0;
+    padding: 130px 0 425px 0;
 
     &::before {
       transform: translateY(154px);
@@ -416,15 +430,15 @@
     width: 700px;
     height: 544px;
     right: 52px;
-    background-image: url(../images/program-images/large-1.jpg);
-    bottom: -30px;
+    background-image: url(../images/program-images/class-large-1.jpg);
+    bottom: -60px;
     left: -180px;
     transform: translateY(50%);  
   }
 
   @media (min-resolution: 192dpi) {
     .program-list::after {
-      background-image: url(../images/program-images/large-1@2x.jpg);
+      background-image: url(../images/program-images/class-large-1@2x.jpg);
     }
   }
 
@@ -446,7 +460,7 @@
   }
 
   .advantages-wrapper {
-    bottom: -34px;
+    bottom: -90px;
     left: 28px;
     transform: translateY(100%);
   }
