@@ -167,13 +167,29 @@
     &:nth-child(3) {
       background-image: url(../images/girl03-dots-mob.png);
     }
+
+    &:nth-child(4) {
+      background-image: url(../images/girl04-dots-mob.png);
+    }
+
+    &:nth-child(5) {
+      background-image: url(../images/girl05-dots-mob.png);
+    }
+
+    &:nth-child(6) {
+      background-image: url(../images/girl06-dots-mob.png);
+    }
+
+    &:nth-child(7) {
+      background-image: url(../images/girl07-dots-mob.png);
+    }
   }
 
   &-arrow {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateY(230px);
+    transform: translateY(250px);
     z-index: 50;
 
     @media (min-width: 768px) {
@@ -208,7 +224,7 @@
   }
 
   &-dots {
-    bottom: -70px;
+    bottom: -120px;
 
     @media (min-width: 768px) {
       bottom: -80px;
@@ -242,5 +258,6 @@
 }
 
 .slick-dots li.slick-active {
+  transition: all 200ms linear;
   border: 2px solid $accent-backcolor;
 }
