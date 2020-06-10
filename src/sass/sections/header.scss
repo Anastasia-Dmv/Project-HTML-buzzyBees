@@ -16,6 +16,24 @@
     display: none;
   }
 }
+.logo-img {
+  width: 79px;
+  height: 31px;
+
+  @include tab {
+    width: 126px;
+    height: 46px;
+  }
+  @include pc {
+    width: 126px;
+    height: 46px;
+  }
+
+  @include wide-screen {
+    width: 126px;
+    height: 46px;
+  }
+}
 
 .logo-img--reverse {
   width: 79px;
