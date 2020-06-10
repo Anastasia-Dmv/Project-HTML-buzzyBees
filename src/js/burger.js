@@ -1,6 +1,6 @@
 $(window).on('load resize', function () {
   const ww = window.innerWidth;
-  if (ww < 1279) {
+  if (ww < 1278) {
     $('.js-ham-menu').on('click', function () {
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
