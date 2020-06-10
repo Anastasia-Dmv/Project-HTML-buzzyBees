@@ -22,7 +22,10 @@
 
 .contacts__tel {
   text-align: center;
-  margin-bottom: 17px;
+  
+  @media(max-width:767px){
+    margin-bottom: 17px;
+  }
 
   @media (min-width: 768px) {
     width: 290px;
@@ -63,7 +66,7 @@
     padding-right: 90px;
     width: 195px;
     order: 3;
-    transform: translateY(5px);
+    
   }
   @media (min-width: 1280px) {
     width: 380px;

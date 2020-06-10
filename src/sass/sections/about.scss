@@ -205,7 +205,7 @@
   align-items: center;
   position: absolute;
   left: 0;
-  z-index: -1;
+
 
   @include sp {
     width: 58px;
@@ -289,6 +289,7 @@
   word-wrap: break-word;
   right: 0;
   letter-spacing: 0.5px;
+  z-index: 1;
 
   @include pc {
     right: 0;
