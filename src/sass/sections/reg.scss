@@ -227,7 +227,7 @@ abbr[title] {
     line-height: 1.8;
 
   }
-  @media (min-width: width 1680px) {
+  @media (min-width:1680px) {
     font-size: 21px;
     line-height: 1.8;
   }
@@ -240,7 +240,7 @@ abbr[title] {
 
 .reg-form__name:required:focus:invalid,
 .reg-form__tel:required:focus:invalid {
-  outline: 2px solid rgb(255, 0, 0);
+  outline: 2px solid #ff0000;
 }
 
 .reg-form__tel{
@@ -250,7 +250,7 @@ abbr[title] {
   background-color: transparent;
 }
 .form__error {
-	color: red;
+	color: #ff0000;
 	text-align: left;
 	font-size: 10px;
 	display: block;
