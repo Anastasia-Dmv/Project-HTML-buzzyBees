@@ -19,12 +19,12 @@
     <form action="#"  method="get" target="_blank" class="reg-form">
 
       <div class="reg-form_wrapper">
-        <input class="reg-form__name" type="text" name="user-name" placeholder="Имя *" pattern="[A-Za-zА-Яа-яЁё]{2,}"  required minlength="2" maxlength="30" />
-       
+        <input class="reg-form__name" type="text" name="user-name" placeholder="Имя *" pattern="[A-Za-zА-Яа-яЁё/-/]{2,}"  required minlength="2" maxlength="30" />
+        <span class="form__error-name">Пожалуйста, введите имя *</span>
         
           <input class="reg-form__tel" type="tel" name="phone"   pattern="[+]{1}[0-9]{12}"  maxlength="13"  required
           placeholder="Телефон *" /> 
-          <span class="form__error">Это поле должно содержать телефон в формате +381234567890</span>
+          <span class="form__error">Это поле должно содержать телефон в формате +381234567890 *</span>
        
       
       </div>

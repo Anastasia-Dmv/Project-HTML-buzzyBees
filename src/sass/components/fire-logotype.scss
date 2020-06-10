@@ -1,65 +1,65 @@
 /* LOGO */
 
-.fire-logotype {
-    width: 15px;
-    height: 22px;
-    fill: $second-text-color;
-    @include tab {
-      width: 21px;
-      height: 30px;
-    }
-    @include pc {
-      width: 21px;
-      height: 30px;
-    }
-    @include wide-screen {
-      width: 21px;
-      height: 30px;
-    }
-  }
-  .logotype {
-    font-size: 15px;
-    font-weight: 800;
-    color: #000000;
-    line-height: 1.2;
-    @include tab {
-      font-size: 25px;
-    }
+// .fire-logotype {
+//     width: 15px;
+//     height: 22px;
+//     fill: $second-text-color;
+//     @include tab {
+//       width: 21px;
+//       height: 30px;
+//     }
+//     @include pc {
+//       width: 21px;
+//       height: 30px;
+//     }
+//     @include wide-screen {
+//       width: 21px;
+//       height: 30px;
+//     }
+//   }
+//   .logotype {
+//     font-size: 15px;
+//     font-weight: 800;
+//     color: #000000;
+//     line-height: 1.2;
+//     @include tab {
+//       font-size: 25px;
+//     }
   
-    @include pc {
-      font-size: 25px;
-    }
+//     @include pc {
+//       font-size: 25px;
+//     }
   
-    @include wide-screen {
-      font-size: 25px;
-    }
-  }
+//     @include wide-screen {
+//       font-size: 25px;
+//     }
+//   }
   
-  .logotype-sub {
-    display: block;
-    padding-left: 1px;
-    font-size: 6px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 1.2;
-    text-transform: uppercase;
-    @include tab {
-      font-size: 9px;
-      letter-spacing: 0.6px;
-    }
+//   .logotype-sub {
+//     display: block;
+//     padding-left: 1px;
+//     font-size: 6px;
+//     font-weight: 700;
+//     color: #000000;
+//     line-height: 1.2;
+//     text-transform: uppercase;
+//     @include tab {
+//       font-size: 9px;
+//       letter-spacing: 0.6px;
+//     }
   
-    @include pc {
-      font-size: 9px;
-      letter-spacing: 0.6px;
-    }
+//     @include pc {
+//       font-size: 9px;
+//       letter-spacing: 0.6px;
+//     }
   
-    @include wide-screen {
-      font-size: 9px;
-      letter-spacing: 0.6px;
-    }
-  }
+//     @include wide-screen {
+//       font-size: 9px;
+//       letter-spacing: 0.6px;
+//     }
+//   }
   
-  .logotype-orange {
-    color: $second-text-color;
-  }
+//   .logotype-orange {
+//     color: $second-text-color;
+//   }
   
