@@ -19,13 +19,18 @@
     <form action="#"  method="get" target="_blank" class="reg-form">
 
       <div class="reg-form_wrapper">
-        <input class="reg-form__name" type="text" name="user-name" placeholder="Имя *"  required minlength="2" />
-        <input class="reg-form__tel" type="tel" name="phone"   pattern="[0-9]{12}" maxlength="12"  minlength="12" required
-          placeholder="Телефон *" />
+        <input class="reg-form__name" type="text" name="user-name" placeholder="Имя *"  onkeyup="var yratext=/['0-9']/; if(yratext.test(this.value)) this.value=''" required minlength="2" />
+       
+        
+          <input class="reg-form__tel" type="tel" name="phone"   pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="19" maxlength="19"  required
+          placeholder="Телефон *" /> 
+          <span class="form__error">Это поле должно содержать телефон в формате +38 (123) 456-78-90</span>
+       
+      
       </div>
       <button class="btn-orange" type="submit">
         <span class="btn-orange__text">хочу на бесплатное занятие</span>
       </button>
     </form>
-  </dev>
+  </div>
 </section>
