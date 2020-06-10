@@ -278,6 +278,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
   position: absolute;
   left:50%;
   transform: translateX(-50%);
+  @media(min-width:1680px) {
+    transform: translate(-50%, 550%)
+  }
 }
 .reg-form__name{
   position: relative;
@@ -286,12 +289,12 @@ input:invalid:not(:placeholder-shown) + .form__error-name {
   display: block;
   position: absolute;
   left:50%;
-  transform: translate(-50%,-190%);
+  transform: translate(-50%, -190%);
   @media(min-width:1280px){
-    transform: translate(-50%,-150%)
+    transform: translate(-50%, -105%)
   }
   @media(min-width:1680px) {
-    transform: translate(-50%,-110%)
+    transform: translate(-50%, 220%)
   }
 }
 
