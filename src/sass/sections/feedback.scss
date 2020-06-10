@@ -1,38 +1,34 @@
-.feedback-section{
+.feedback-section {
   padding: 20px 0 126px 0;
+
   @media (min-width: 768px) {
     padding: 30px 0 70px 0;
   }
-  @media (min-width: 1280px){
+
+  @media (min-width: 1280px) {
     padding: 60px 0 110px 0;
   }
-  @media (min-width: 1680px){
+
+  @media (min-width: 1680px) {
     padding: 90px 0 120px 0;
   }
-
 }
-
-
-
 
 .feedback-title {
   text-align: center;
-  // padding-top: 16px;
+
   padding-bottom: 16px;
 
   @media (min-width: 768px) {
-    // padding-top: 52px;
     padding-bottom: 26px;
     line-height: 62.54px;
   }
 
   @media (min-width: 1280px) {
-    // padding-top: 90px;
     padding-bottom: 34px;
   }
 
   @media (min-width: 1680px) {
-    // padding-top: 120px;
   }
 }
 /*-------*/
@@ -47,6 +43,7 @@
   }
 
   &__item {
+    outline: 0px;
     width: 280px;
     text-align: center;
     padding-top: 22px;
@@ -170,36 +167,40 @@
 
 .slick {
   &-dots li {
-    width: 54px;
-    height: 54px;
     border-radius: 50%;
+    border: 2px solid white;
+    background-color: $paragraph-text-color;
 
-    &:nth-child(1) {
-      background-image: url(../images/girl01-dots-mob.png);
-    }
+    @media (min-width: 768px) {
+      width: 54px;
+      height: 54px;
+      &:nth-child(1) {
+        background-image: url(../images/feedback/girl01-dots-mob.png);
+      }
 
-    &:nth-child(2) {
-      background-image: url(../images/girl02-dots-mob.png);
-    }
+      &:nth-child(2) {
+        background-image: url(../images/feedback/girl02-dots-mob.png);
+      }
 
-    &:nth-child(3) {
-      background-image: url(../images/girl03-dots-mob.png);
-    }
+      &:nth-child(3) {
+        background-image: url(../images/feedback/girl03-dots-mob.png);
+      }
 
-    &:nth-child(4) {
-      background-image: url(../images/girl04-dots-mob.png);
-    }
+      &:nth-child(4) {
+        background-image: url(../images/feedback/girl04-dots-mob.png);
+      }
 
-    &:nth-child(5) {
-      background-image: url(../images/girl05-dots-mob.png);
-    }
+      &:nth-child(5) {
+        background-image: url(../images/feedback/girl05-dots-mob.png);
+      }
 
-    &:nth-child(6) {
-      background-image: url(../images/girl06-dots-mob.png);
-    }
+      &:nth-child(6) {
+        background-image: url(../images/feedback/girl06-dots-mob.png);
+      }
 
-    &:nth-child(7) {
-      background-image: url(../images/girl07-dots-mob.png);
+      &:nth-child(7) {
+        background-image: url(../images/feedback/girl07-dots-mob.png);
+      }
     }
   }
 
@@ -216,7 +217,6 @@
   }
 
   &-next {
-    background-image: url(../images/arrow-right.png);
     right: 0px;
 
     @media (min-width: 1280px) {
@@ -225,7 +225,6 @@
   }
 
   &-prev {
-    background-image: url(../images/arrow-left.png);
     left: 0px;
 
     @media (min-width: 1280px) {
@@ -235,31 +234,14 @@
 
   &-dotted.slick-slider {
     margin-bottom: 80px;
-
-    // @media (min-width: 768px) {
-    //   margin-bottom: 154px;
-    // }
   }
 
   &-dots {
-    bottom: -120px;
+    bottom: -75px;
 
     @media (min-width: 768px) {
       bottom: -80px;
     }
-  }
-  &-prev:hover,
-  &-prev:focus {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/arrow-left.png);
-  }
-
-  &-next:hover,
-  &-next:focus {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/arrow-right.png);
   }
 }
 
@@ -278,4 +260,17 @@
 .slick-dots li.slick-active {
   transition: all 200ms linear;
   border: 2px solid $accent-backcolor;
+  background-color: $accent-backcolor;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: $accent-backcolor;
+  font-weight: bold;
+}
+
+.slick-prev:after,
+.slick-next:after {
+  color: $accent-backcolor;
+  font-weight: bold;
 }
