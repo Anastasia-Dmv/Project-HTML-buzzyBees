@@ -22,9 +22,7 @@
 
 .contacts__tel {
   text-align: center;
-  @media (max-width:767px){
-    margin-bottom: 27px;
-  }
+  margin-bottom: 17px;
 
   @media (min-width: 768px) {
     width: 290px;
@@ -47,7 +45,7 @@
 .tel-link--icon {
   width: 25px;
   height: 25px;
-  fill: orange;
+  fill:rgb(17, 21, 23);
   transform: translateY(35%);
 }
 
@@ -77,7 +75,9 @@
   width: 38px;
   height: 38px;
 }
-
+.contacts__instagram-img{
+  margin: auto;
+}
 /*-----fire-logo-----*/
 
 .contacts__logo {
@@ -92,8 +92,59 @@
     width: 360px;
   }
 }
+.contacts__logo-img{
+  display:inline-block;
+  @media (min-width:1280px){
+    width: 126px;
+    height: 46px;
+  }
+}
+// .fire-logotype {
+//   width: 25px;
+//   height: 33px;
+//   position: absolute;
+//   transform: translate(-15px, 0px);
+//   fill: $second-text-color;
+// }
+// .logotype {
+//   position: relative;
+//   z-index: 20;
+//   font-size: 15px;
+//   font-weight: 800;
+//   color: #000000;
+//   line-height: 1.2;
+// }
+// .logotype-reverse {
+//   font-size: 15px;
+//   font-weight: 800;
+//   color: $three-text-color;
+//   line-height: 1.2;
+// }
 
+// .logotype {
+//   @media (min-width: 768px) {
+//     font-size: 25px;
+//     font-weight: bold;
+//   }
+// }
 
+// .logotype-sub {
+//   display: block;
+//   padding-left: 1px;
+//   font-size: 6px;
+//   font-weight: 700;
+//   color: #000000;
+//   line-height: 1.2;
+//   text-transform: uppercase;
+
+//   @media (min-width: 768px) {
+//     font-size: 8.75px;
+//   }
+// }
+
+// .logotype-orange {
+//   color: $second-text-color;
+// }
 /*-----LEGAL-----*/
 .legal{
   padding:26px 0 28px 0;
@@ -117,3 +168,15 @@
   }
   
 }
+.contacts__tel-link:hover,
+.contacts__tel-link:focus{
+  color:$accent-backcolor;
+  
+}
+.contacts__tel-link:focus,
+.contacts__tel-link:hover .tel-link--icon {
+    fill:$accent-backcolor;
+
+    
+}
+
