@@ -242,3 +242,54 @@ abbr[title] {
 .reg-form__tel:required:focus:invalid {
   outline: 2px solid rgb(255, 0, 0);
 }
+
+.reg-form__tel{
+  position: relative;
+}
+.reg-form__tel:focus{
+  background-color: transparent;
+}
+.form__error {
+	color: red;
+	text-align: left;
+	font-size: 10px;
+	display: block;
+	margin-top: 3px;
+  display: none;
+  text-align:center;
+  @media (min-width: 768px) {
+    font-size: 11px;
+  }
+
+  @media(min-width:1280px) {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align:center;
+  }
+
+  @media(min-width:1680px) {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.8;
+    
+  }
+}
+
+
+
+input:valid:not(:placeholder-shown) {
+	border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+  
+
