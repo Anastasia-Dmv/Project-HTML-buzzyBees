@@ -23,7 +23,7 @@ $('.header__nav-lesson-link').on('click', function () {
 });
 $(window).on('load resize', function () {
   const ww = window.innerWidth;
-  if (ww > 959 && $('.js-header__nav-wrap').hasClass('close')) {
+  if (ww > 1279 && $('.js-header__nav-wrap').hasClass('close')) {
     $('.js-header__nav-wrap').removeClass('close');
   }
 });
