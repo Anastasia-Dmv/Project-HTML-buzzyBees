@@ -2,10 +2,16 @@
 
 .logo-link--reverse {
   height: 60px;
-  display: flex;
-  align-items: center;
   width: 280px;
   margin: 0 auto;
+
+  &.open {
+    display: flex;
+    align-items: center;
+  }
+  &.close {
+    display: none;
+  }
 
   @include tab {
     width: 690px;
@@ -13,6 +19,15 @@
   }
   @include pc {
     height: 70px;
+    display: none;
+  }
+}
+
+.js-header__logo {
+  &.open {
+    display: block;
+  }
+  &.close {
     display: none;
   }
 }
@@ -162,7 +177,11 @@
     }
   }
 
-  
+  /*   .header__nav-wrap.close {
+    @include pc {
+      display: none;
+    }
+  } */
 
   &__nav-lesson-link {
     margin: 0 auto;
@@ -372,19 +391,5 @@
     @include wide-screen {
       font-size: 25px;
     }
-  }
-}
-
-.header__logo.active .logotype {
-  color: $three-text-color;
-}
-
-.header__logo.active .logotype-sub {
-  color: $three-text-color;
-}
-
-.header__nav-wrap.close {
-  @include pc {
-    display: none;
   }
 }
