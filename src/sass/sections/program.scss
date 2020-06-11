@@ -370,9 +370,9 @@
       width: calc((100% - 64px * 2) / 3);
       padding-top: 36px;
 
-      &:not(3n) {
-        margin-right: 70px;
-      }
+      // &:not(3n) {
+      //   margin-right: 70px;
+      // }
 
       &::after {
         font-size: 21px;
