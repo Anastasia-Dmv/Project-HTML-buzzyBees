@@ -27,7 +27,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      padding: 30px 70px 30px 90px;
+      padding: 0px 70px 30px 90px;
     }
 
     @media (min-width: 1280px) {
@@ -62,7 +62,7 @@
     margin-bottom: 0px;
 
     @media (min-width: 768px) {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
     }
   
     @media (min-width: 1280px) {

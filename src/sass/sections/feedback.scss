@@ -31,6 +31,11 @@
   @media (min-width: 1680px) {
   }
 }
+.feedback-title--hidden{
+  @media (min-width: 768px) {
+    display:none;
+  }
+}
 /*-------*/
 
 .slider {
